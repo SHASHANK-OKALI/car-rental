@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book a Car | Car Rental</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <i class="fa-solid fa-car"></i>
+
+                Car <span>Rental</span>
+
+            </a>
+
+
+            <!-- Mobile Menu -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- Navigation -->
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="cars.html">
+                        Cars
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="bookings.html">
+                       My Bookings
+                    </a>
+                </li>
+
+                <li>
+
+                    <a href="index.html#about">
+                        About
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html"
+                        class="nav-book-btn active"
+                    >
+                        Book Now
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-label">
+                RESERVATION
+            </p>
+
+            <h1>
+                Book Your Car
+            </h1>
+
+            <p>
+                Fill in your details and reserve your
+                perfect car in just a few steps.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BOOKING SECTION
+    ========================== -->
+
+    <section class="booking-section">
+
+        <div class="container booking-grid">
+
+
+            <!-- =========================
+                 BOOKING FORM
+            ========================== -->
+
+            <div class="booking-form-card">
+
+                <div class="booking-heading">
+
+                    <h2>
+                        Rental Details
+                    </h2>
+
+                    <p>
+                        Please provide your information below.
+                    </p>
+
+                </div>
+
+
+                <form id="bookingForm">
+
+
+                    <!-- Customer Name -->
+
+                    <div class="form-group">
+
+                        <label for="customerName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="nameError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="customerEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="emailError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="customerPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="Enter 10-digit phone number"
+                            maxlength="10"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="phoneError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- Car -->
+
+                    <div class="form-group">
+
+                        <label for="carSelect">
+                            Select Car
+                        </label>
+
+                        <select
+                            id="carSelect"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select a Car --
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="error-message"
+                            id="carError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- Dates -->
+
+                    <div class="date-grid">
+
+
+                        <!-- Pickup -->
+
+                        <div class="form-group">
+
+                            <label for="pickupDate">
+                                Pickup Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="pickupDate"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- Return -->
+
+                        <div class="form-group">
+
+                            <label for="returnDate">
+                                Return Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="returnDate"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Pickup Location -->
+
+                    <div class="form-group">
+
+                        <label for="pickupLocation">
+                            Pickup Location
+                        </label>
+
+                        <select id="pickupLocation" required>
+
+                            <option value="">
+                                -- Select Location --
+                            </option>
+
+                            <option value="Bengaluru">
+                                Bengaluru
+                            </option>
+
+                            <option value="Yelahanka">
+                                Yelahanka
+                            </option>
+
+                            <option value="Hebbal">
+                                Hebbal
+                            </option>
+
+                            <option value="Electronic City">
+                                Electronic City
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Additional Message -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Additional Message
+                            <span>(Optional)</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder="Any special requirements?"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="booking-submit-btn"
+                    >
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                        Confirm Booking
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- =========================
+                 BOOKING SUMMARY
+            ========================== -->
+
+            <div class="booking-summary">
+
+
+                <div class="summary-card">
+
+
+                    <h2>
+                        Booking Summary
+                    </h2>
+
+
+                    <!-- Selected Car -->
+
+                    <div
+                        class="summary-car"
+                        id="summaryCar"
+                    >
+
+                        <div class="summary-car-icon">
+
+                            <i class="fa-solid fa-car"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3 id="summaryCarName">
+                                Select a car
+                            </h3>
+
+                            <p id="summaryCarCategory">
+                                Car details will appear here
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Rental Information -->
+
+                    <div class="summary-details">
+
+
+                        <div>
+
+                            <span>
+                                <i class="fa-solid fa-calendar"></i>
+                                Pickup
+                            </span>
+
+                            <strong id="summaryPickup">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                <i class="fa-solid fa-calendar-check"></i>
+                                Return
+                            </span>
+
+                            <strong id="summaryReturn">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                <i class="fa-solid fa-clock"></i>
+                                Rental Days
+                            </span>
+
+                            <strong id="summaryDays">
+                                0 Days
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Location
+                            </span>
+
+                            <strong id="summaryLocation">
+                                -
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Price -->
+
+                    <div class="summary-price">
+
+
+                        <div>
+
+                            <span>
+                                Price / Day
+                            </span>
+
+                            <strong id="summaryPrice">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rental Days
+                            </span>
+
+                            <strong id="summaryDayPrice">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="total-row">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="summaryTotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Security -->
+
+                    <div class="secure-message">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <p>
+                            Your booking information is
+                            securely handled.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Help -->
+
+                <div class="help-card">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+
+                        <h3>
+                            Need Help?
+                        </h3>
+
+                        <p>
+                            Contact our support team
+                            for assistance.
+                        </p>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer
+        class="footer"
+        id="contact"
+    >
+
+        <div class="container footer-grid">
+
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <i class="fa-solid fa-car"></i>
+
+                    Car <span>Rental</span>
+
+                </a>
+
+                <p>
+                    Making car rental simple, affordable
+                    and convenient for everyone.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Cars
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bengaluru, Karnataka
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@carrental.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Car Rental. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/booking.js"></script>
+
+
+</body>
+
+</html>

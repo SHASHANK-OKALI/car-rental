@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Bookings | Car Rental</title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <i class="fa-solid fa-car"></i>
+
+                Car <span>Rental</span>
+
+            </a>
+
+
+            <!-- Mobile Menu -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- Navigation Links -->
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="cars.html">
+                        Cars
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="index.html#about">
+                        About
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html"
+                        class="nav-book-btn"
+                    >
+                        Book Now
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-label">
+                YOUR RESERVATIONS
+            </p>
+
+            <h1>
+                My Bookings
+            </h1>
+
+            <p>
+                View and manage your car rental bookings.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BOOKINGS SECTION
+    ========================== -->
+
+    <section class="bookings-section">
+
+        <div class="container">
+
+
+            <!-- Booking Statistics -->
+
+            <div class="booking-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Bookings
+                        </span>
+
+                        <strong id="totalBookings">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-car"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Cars Rented
+                        </span>
+
+                        <strong id="carsRented">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Spent
+                        </span>
+
+                        <strong id="totalSpent">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Bookings Header -->
+
+            <div class="bookings-header">
+
+                <h2>
+                    Booking History
+                </h2>
+
+                <a
+                    href="booking.html"
+                    class="new-booking-btn"
+                >
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    New Booking
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Bookings Container -->
+
+            <div
+                id="bookingsContainer"
+                class="bookings-container"
+            >
+
+                <!-- JavaScript will add bookings here -->
+
+            </div>
+
+
+
+            <!-- Empty State -->
+
+            <div
+                id="emptyBookings"
+                class="empty-bookings"
+            >
+
+                <div class="empty-icon">
+
+                    <i class="fa-solid fa-calendar-xmark"></i>
+
+                </div>
+
+                <h2>
+                    No Bookings Yet
+                </h2>
+
+                <p>
+                    You haven't made any car rental bookings yet.
+                </p>
+
+                <a
+                    href="cars.html"
+                    class="empty-book-btn"
+                >
+                    Browse Cars
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer
+        class="footer"
+        id="contact"
+    >
+
+        <div class="container footer-grid">
+
+
+            <!-- Company -->
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <i class="fa-solid fa-car"></i>
+
+                    Car <span>Rental</span>
+
+                </a>
+
+                <p>
+                    Making car rental simple, affordable
+                    and convenient for everyone.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Links -->
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Cars
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="bookings.html">
+                    My Bookings
+                </a>
+
+            </div>
+
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bengaluru, Karnataka
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@carrental.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Car Rental. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/bookings.js"></script>
+
+
+</body>
+
+</html>

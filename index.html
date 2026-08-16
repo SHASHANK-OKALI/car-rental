@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Rental | Premium Car Rental Service</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-car"></i>
+                Car <span>Rental</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="cars.html">Cars</a>
+                </li>
+
+                <li>
+                    <a href="bookings.html">
+                       My Bookings
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="booking.html" class="nav-book-btn">
+                        Book Now
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="hero-small">
+                    <i class="fa-solid fa-car-side"></i>
+                    Premium Car Rental Service
+                </p>
+
+                <h1>
+                    Your Journey,
+                    <span>Our Cars.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Rent your perfect car at affordable prices.
+                    Easy booking, reliable vehicles and a smooth
+                    driving experience.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="cars.html" class="btn primary-btn">
+                        Explore Cars
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="booking.html" class="btn secondary-btn">
+                        Book a Car
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>50+</strong>
+                        <span>Cars</span>
+                    </div>
+
+                    <div>
+                        <strong>1000+</strong>
+                        <span>Customers</span>
+                    </div>
+
+                    <div>
+                        <strong>4.9</strong>
+                        <span>Rating</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="hero-car-card">
+
+                    <div class="car-badge">
+                        <i class="fa-solid fa-star"></i>
+                        4.9 Rated
+                    </div>
+
+                    <div class="hero-car-placeholder">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <div class="hero-car-info">
+                        <h3>Premium Cars</h3>
+                        <p>Ready for your next journey</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Box -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-box">
+
+                <div class="search-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <small>Pickup Location</small>
+                        <strong>Bengaluru</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="search-item">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    <div>
+                        <small>Pickup Date</small>
+                        <strong>Choose Date</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="search-item">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <div>
+                        <small>Return Date</small>
+                        <strong>Choose Date</strong>
+                    </div>
+
+                </div>
+
+
+                <a href="booking.html" class="search-btn">
+                    Search Cars
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Cars -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        OUR FLEET
+                    </p>
+
+                    <h2>
+                        Featured Cars
+                    </h2>
+
+                </div>
+
+                <a href="cars.html" class="view-all">
+                    View All Cars
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="cars-grid" id="featuredCars">
+
+                <!-- Cars will be loaded using JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+
+                <div class="about-icon">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+
+                <h3>Car Rental</h3>
+
+                <p>
+                    Making every journey comfortable and memorable.
+                </p>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    Your trusted partner
+                    for every journey.
+                </h2>
+
+                <p>
+                    Car Rental is a modern car rental platform
+                    designed to make renting a car simple,
+                    convenient and affordable.
+                </p>
+
+                <p>
+                    Whether you need a car for a weekend trip,
+                    business travel or a family vacation,
+                    we have a vehicle for you.
+                </p>
+
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Well maintained cars</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Affordable pricing</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Easy online booking</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>24/7 customer support</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Choose Us -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading center-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        WHY CAR RENTAL
+                    </p>
+
+                    <h2>
+                        Everything you need
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <h3>
+                        Wide Range
+                    </h3>
+
+                    <p>
+                        Choose from a wide range of cars
+                        for every need and budget.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                    <h3>
+                        Best Prices
+                    </h3>
+
+                    <p>
+                        Enjoy transparent and affordable
+                        rental prices without hidden charges.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>
+                        Safe & Reliable
+                    </h3>
+
+                    <p>
+                        Our vehicles are maintained regularly
+                        for a safe driving experience.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>
+                        Easy Booking
+                    </h3>
+
+                    <p>
+                        Book your car online in just
+                        a few simple steps.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+
+        <div class="container cta-content">
+
+            <div>
+
+                <p class="section-label">
+                    READY TO GO?
+                </p>
+
+                <h2>
+                    Start your journey today.
+                </h2>
+
+                <p>
+                    Find the perfect car and hit the road.
+                </p>
+
+            </div>
+
+            <a href="cars.html" class="btn white-btn">
+                Find Your Car
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-car"></i>
+                    Car <span>Rental</span>
+                </a>
+
+                <p>
+                    Making car rental simple, affordable
+                    and convenient for everyone.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Cars
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bengaluru, Karnataka
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@carrental.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Car Rental. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

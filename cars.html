@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cars | Car Rental</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <i class="fa-solid fa-car"></i>
+
+                Car <span>Rental</span>
+
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- Navigation Links -->
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="cars.html"
+                        class="active"
+                    >
+                        Cars
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="index.html#about">
+                        About
+                    </a>
+
+                </li>
+
+
+                <li>
+                    <a href="bookings.html">
+                         My Bookings
+                    </a>
+                </li>
+
+
+                <li>
+
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="booking.html"
+                        class="nav-book-btn"
+                    >
+                        Book Now
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-label">
+                OUR FLEET
+            </p>
+
+            <h1>
+                Find Your Perfect Car
+            </h1>
+
+            <p>
+                Choose from our collection of comfortable,
+                reliable and affordable cars.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FILTER SECTION
+    ========================== -->
+
+    <section class="cars-section">
+
+        <div class="container">
+
+
+            <!-- Search and Filter -->
+
+            <div class="filter-box">
+
+
+                <!-- Search -->
+
+                <div class="filter-item search-filter">
+
+                    <label for="searchInput">
+                        Search Car
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search car name..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Category -->
+
+                <div class="filter-item">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="SUV">
+                            SUV
+                        </option>
+
+                        <option value="Sedan">
+                            Sedan
+                        </option>
+
+                        <option value="Hatchback">
+                            Hatchback
+                        </option>
+
+                        <option value="MUV">
+                            MUV
+                        </option>
+
+                        <option value="Luxury">
+                            Luxury
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Fuel -->
+
+                <div class="filter-item">
+
+                    <label for="fuelFilter">
+                        Fuel Type
+                    </label>
+
+                    <select id="fuelFilter">
+
+                        <option value="all">
+                            All Fuel Types
+                        </option>
+
+                        <option value="Petrol">
+                            Petrol
+                        </option>
+
+                        <option value="Diesel">
+                            Diesel
+                        </option>
+
+                        <option value="Electric">
+                            Electric
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Price -->
+
+                <div class="filter-item">
+
+                    <label for="priceFilter">
+                        Sort By
+                    </label>
+
+                    <select id="priceFilter">
+
+                        <option value="default">
+                            Default
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Results Information -->
+
+            <div class="results-header">
+
+                <h2>
+                    Available Cars
+                </h2>
+
+                <span id="carCount">
+                    0 Cars
+                </span>
+
+            </div>
+
+
+
+            <!-- Cars -->
+
+            <div
+                class="cars-grid"
+                id="carsContainer"
+            >
+
+                <!-- JavaScript will add cars here -->
+
+            </div>
+
+
+
+            <!-- No Results -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <h3>
+                    No cars found
+                </h3>
+
+                <p>
+                    Try changing your search or filters.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer
+        class="footer"
+        id="contact"
+    >
+
+        <div class="container footer-grid">
+
+
+            <!-- Company -->
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <i class="fa-solid fa-car"></i>
+
+                    Car <span>Rental</span>
+
+                </a>
+
+                <p>
+                    Making car rental simple, affordable
+                    and convenient for everyone.
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Links -->
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="cars.html">
+                    Cars
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+            </div>
+
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bengaluru, Karnataka
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@carrental.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Car Rental. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/cars.js"></script>
+
+
+</body>
+
+</html>
