@@ -135,7 +135,10 @@ Car-Rental/
 │
 └── README.md
 
-## 📸 Screenshots
+---
+
+
+ ##📸 Screenshots
 
 ### 🏠 Homepage
 
