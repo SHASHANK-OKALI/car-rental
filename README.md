@@ -161,6 +161,12 @@ Car-Rental/
 ![Mobile View](screenshots/mobile.png)
 
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-[🚗 [**Visit Live Website**]](https:////car-rental-ztf3.onrender.com)
+<div align="center">
+
+<a href="https://car-rental-ztf3.onrender.com">
+  <img src="https://img.shields.io/badge/🚗%20LIVE%20DEMO-OPEN%20WEBSITE-success?style=for-the-badge" alt="Live Demo">
+</a>
+
+</div>
