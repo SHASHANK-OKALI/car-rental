@@ -134,3 +134,25 @@ Car-Rental/
 ├── images/
 │
 └── README.md
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+
+![Homepage](screenshots/homepage.png)
+
+### 🚘 Car Listing
+
+![Car Listing](screenshots/cars.png)
+
+### 📅 Booking Page
+
+![Booking Page](screenshots/booking.png)
+
+### 📋 My Bookings
+
+![My Bookings](screenshots/bookings.png)
+
+### 📱 Mobile Responsive Design
+
+![Mobile View](screenshots/mobile.png)
