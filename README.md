@@ -163,10 +163,6 @@ Car-Rental/
 
 # 🌐 Live Demo
 
-<div align="center">
+🚗 **[OPEN LIVE WEBSITE](https://car-rental-ztf3.onrender.com)**
 
-<a href="https://car-rental-ztf3.onrender.com">
-  <img src="https://img.shields.io/badge/🚗%20LIVE%20DEMO-OPEN%20WEBSITE-success?style=for-the-badge" alt="Live Demo">
-</a>
-
-</div>
+👉 https://car-rental-ztf3.onrender.com
