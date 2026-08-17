@@ -135,15 +135,27 @@ Car-Rental/
 │
 └── README.md
 
-📸 Project Screenshots
 
-🏠 Homepage
-<p align="center"> <img src="screenshots/homepage.png" width="850"> </p>
-🚘 Car Listing
-<p align="center"> <img src="screenshots/cars.png" width="850"> </p>
-📅 Booking Page
-<p align="center"> <img src="screenshots/booking.png" width="850"> </p>
-📋 My Bookings
-<p align="center"> <img src="screenshots/bookings.png" width="850"> </p>
-📱 Responsive Mobile Design
-<p align="center"> <img src="screenshots/mobile.png" width="400"> </p>
+**📸 Project Screenshots**
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+
+![Homepage](screenshots/homepage.png)
+
+### 🚘 Car Listing
+
+![Car Listing](screenshots/cars.png)
+
+### 📅 Booking Page
+
+![Booking Page](screenshots/booking.png)
+
+### 📋 My Bookings
+
+![My Bookings](screenshots/bookings.png)
+
+### 📱 Mobile Responsive Design
+
+![Mobile View](screenshots/mobile.png)
